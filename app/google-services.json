@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "533591162529",
+    "firebase_url": "https://giveforhelp-f0b76.firebaseio.com",
+    "project_id": "giveforhelp-f0b76",
+    "storage_bucket": "giveforhelp-f0b76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533591162529:android:a6ffbd0d65dc5343",
+        "android_client_info": {
+          "package_name": "com.yahoohack.giveforhelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533591162529-nf6fp1bed33p4pb4grfsqmi2om32mvp2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl8MI1SpfCcPCpodQkY0adnEaxmrJcto4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
