@@ -20,6 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Login extends AppCompatActivity implements View.OnClickListener {
 
     private Button buttonSignIn;
+    private Button buttonSignIn2;
     private EditText editTextEmail;
     private EditText editTextPassword;
     private TextView textViewSignUp;
@@ -36,6 +37,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         if (firebaseAuth.getCurrentUser() != null) {
             //profile activity
             finish();
+            overridePendingTransition(0, 0);
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
         }
 
@@ -44,14 +46,16 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
         buttonSignIn = (Button) findViewById(R.id.buttonSignIn);
+        buttonSignIn2 = (Button) findViewById(R.id.buttonLogin2);
         textViewSignUp = (TextView) findViewById(R.id.textViewSignUp);
 
         buttonSignIn.setOnClickListener(this);
+        buttonSignIn2.setOnClickListener(this);
         textViewSignUp.setOnClickListener(this);
 
     }
 
-    private void userLogin() {
+    private void userLogin(final int userType) {
         String email = editTextEmail.getText().toString().trim();
         String password = editTextPassword.getText().toString().trim();
 
@@ -76,7 +80,13 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                         if (task.isSuccessful()) {
                             //profile activity
                             finish();
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            if (userType == 1) {
+                                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            }
+                            else {
+                                startActivity(new Intent(getApplicationContext(), InstitutionMainActivity.class));
+                            }
+
                         }
                         else {
                             Toast.makeText(Login.this, "Login Failed. Please try again.", Toast.LENGTH_SHORT).show();
@@ -88,7 +98,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if (v == buttonSignIn) {
-            userLogin();
+            userLogin(1);
+        }
+
+        if (v == buttonSignIn2) {
+            userLogin(2);
         }
 
         if (v == textViewSignUp) {

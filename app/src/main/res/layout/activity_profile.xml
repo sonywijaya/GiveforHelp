@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tab_activity_4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    tools:context="com.yahoohack.giveforhelp.Activity.ProfileActivity">
+
+    <TextView
+        android:text="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userPointsVal"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/holo_blue_dark"
+        android:layout_alignBaseline="@+id/userLevelVal"
+        android:layout_alignBottom="@+id/userLevelVal"
+        android:layout_alignLeft="@+id/userPoints"
+        android:layout_alignStart="@+id/userPoints"
+        android:paddingLeft="50dp"/>
+
+    <TextView
+        android:text="Level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/userLevel"
+        android:textSize="18sp"
+        android:layout_below="@+id/userCategory"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:text="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userLevelVal"
+        android:textSize="36sp"
+        android:textColor="@color/holo_blue_dark"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/userLevel"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/displayName"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/profile"
+        android:layout_marginTop="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/userAddress"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userDonatedVal"
+        android:textAlignment="textEnd"
+        android:layout_gravity="end"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/holo_blue_dark"
+        android:layout_alignBaseline="@+id/userLevelVal"
+        android:paddingRight="50dp"
+        android:text="1"
+        />
+
+    <TextView
+        android:text="Points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userPoints"
+        android:layout_alignBaseline="@+id/userLevel"
+        android:paddingLeft="50dp"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"/>
+
+    <TextView
+        android:text="Donated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userDonated"
+        android:layout_alignBaseline="@+id/userLevel"
+        android:paddingRight="50dp"
+        android:textAlignment="textEnd"
+        android:layout_gravity="end"/>
+
+    <Button
+        android:text="Sign Out"
+        android:id="@+id/buttonLogout"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:text="Edit Profile"
+        android:id="@+id/upload"
+        android:layout_above="@id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Address"
+        android:ems="10"
+        android:id="@+id/userAddress"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="normal|italic"
+        android:layout_below="@+id/displayName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:text="Newborn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userCategory"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/holo_blue_dark"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+</RelativeLayout>

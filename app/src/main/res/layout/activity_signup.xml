@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
@@ -16,9 +17,18 @@
         android:layout_centerVertical="true"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
 
-    <EditText
+        <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Registration"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <EditText
         android:layout_margin="15dp"
         android:inputType="textEmailAddress"
         android:hint="Enter your email"
@@ -35,11 +45,24 @@
         android:layout_height="wrap_content"/>
 
     <Button
-        android:layout_margin="15dp"
         android:id="@+id/buttonRegister"
         android:text="Register"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"/>
+
+        <Button
+            android:text="Register as Institution"
+            android:id="@+id/buttonRegister2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"/>
 
      <TextView
          android:textAlignment="center"
@@ -49,4 +72,13 @@
          android:layout_height="wrap_content"/>
 
     </LinearLayout>
+
+    <ImageView
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"/>
+
 </RelativeLayout>

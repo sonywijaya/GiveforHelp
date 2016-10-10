@@ -1,42 +1,49 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/title"
+                android:id="@+id/userName"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 tools:context="com.yahoohack.giveforhelp.MainActivity" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
 
     <TabHost
         android:id="@android:id/tabhost"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true" >
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@android:id/tabhost"
             android:orientation="vertical" >
 
             <TabWidget
                 android:id="@android:id/tabs"
+                android:layout_below="@android:id/tabhost"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                >
-
-
-
+                android:layout_alignParentTop="true">
             </TabWidget>
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
+                android:layout_below="@android:id/tabs"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-
-
-
+                android:layout_height="wrap_content" >
             </FrameLayout>
-        </LinearLayout>
+
+        </RelativeLayout>
     </TabHost>
 
 </RelativeLayout>

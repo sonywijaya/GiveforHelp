@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/userName"
+        android:textColor="@color/userName"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:text="Contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userContact"
+        android:layout_below="@+id/userName"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:text="Offer or Request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postType"
+        android:layout_below="@+id/userContact"
+        android:layout_alignParentStart="true"
+        android:textColor="?attr/colorAccent"/>
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:layout_below="@+id/postType"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/itemDescription"
+        android:textColor="@color/itemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_below="@+id/itemName"
+        android:layout_alignParentStart="true"/>
+
+
+</RelativeLayout>
