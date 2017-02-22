@@ -1,11 +1,6 @@
 # Give for Help
 Give For Help is an android application which provide a connection for user to donate their secondhand that decent for use by orphanage other social institution.
 
-#### Screenshot
-![Screenshot Android](http://url/screenshot-appname-android.png "screenshot Android")
-
-![Screenshot iOS](http://url/screenshot-appname-ios.png "screenshot iOS")
-
 #### Demo video
 [Give for Help](https://www.youtube.com/watch?v=CiMKrMS_NN4)
 
