@@ -3,9 +3,11 @@ Give For Help is an android application which provide a connection for user to d
 
 #### Screenshot
 ![Screenshot Android](http://url/screenshot-appname-android.png "screenshot Android")
+
 ![Screenshot iOS](http://url/screenshot-appname-ios.png "screenshot iOS")
 
 #### Demo video
+[Give for Help](https://www.youtube.com/watch?v=CiMKrMS_NN4)
 
 ## Tests
 #### Works on
@@ -29,9 +31,7 @@ Give For Help is an android application which provide a connection for user to d
 * Location services
 * Write to storage
 
-## Contributing
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+## Developer
+* Sony Wijaya
+* Eka Darmaputra
+* Dama Vara
