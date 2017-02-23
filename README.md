@@ -12,6 +12,9 @@ Give For Help is an android application which provide a connection for user to d
 ### Artwork
 * [Freepik](http://www.freepik.com/)
 
+### Contributors on GitHub
+* [Eka Darmaputra](https://github.com/ekadarmaputra)
+
 ### Third party libraries
 * [Circle Image View](https://github.com/hdodenhof/CircleImageView)
 * [Easy Permissions](https://github.com/googlesamples/easypermissions)
